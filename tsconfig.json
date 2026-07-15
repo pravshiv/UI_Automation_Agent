@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@data/*": [
+        "tests/*/test-data"
+      ],
+      "@fixtures/*": [
+        "fixtures/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "allure-report"
+  ]
+}
