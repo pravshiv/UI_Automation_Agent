@@ -1,0 +1,22 @@
+{
+  "name": "feature-automation",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:allure": "playwright test && allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "auth:login": "ts-node utils/ssoLoginHelper.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-js-commons": "^3.0.0",
+    "allure-playwright": "^3.0.0",
+    "allure-commandline": "^2.30.0",
+    "typescript": "^5.4.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
+  }
+}
